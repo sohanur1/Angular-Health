@@ -1,0 +1,38 @@
+<h2>master medicine list</h2>
+<button type="button" class="btn btn-primary">Primary</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>manufacturer</th>
+            <th>catagory</th>
+            <th>dosage_brand_strength_old</th>
+            <th>dosage_description</th>
+            <th>brand_name</th>
+            <th>dosage_brand_strength</th>
+            <th>brand_name_old</th>
+            <th>generic_name</th>
+            <th>strength_old</th>
+            <th>doases_description_old</th>
+            <th>usefor</th>
+            <th>dar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let master of masterMedicine">
+            <td> {{master.id}} </td>
+            <td> {{master.manufacturer}} </td>
+            <td> {{master.dosage_brand_strength_old}} </td>
+            <td> {{master.dosage_description}} </td>
+            <td> {{master.brand_name}} </td>
+            <td> {{master.dosage_brand_strength}} </td>
+            <td> {{master.brand_name_old}} </td>
+            <td> {{master.generic_name}} </td>
+            <td> {{master.strength_old}} </td>
+            <td> {{master.usefor}} </td>
+            <td> {{master.dar}} </td>
+            
+        </tr>
+    </tbody>
+
+</table>

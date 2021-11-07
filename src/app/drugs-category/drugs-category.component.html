@@ -1,0 +1,19 @@
+<h2>drug category list</h2>
+<button type="button" class="btn btn-primary">Primary</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>category_name</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let drug of drugsCategory">
+            <td> {{drug.id}} </td>
+            <td> {{drug.category_name}} </td>
+            
+        </tr>
+    </tbody>
+
+</table>
